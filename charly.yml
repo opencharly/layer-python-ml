@@ -10,8 +10,12 @@ python-ml:
             that same interpreter. Every interpreter and library lands at a
             fixed path under ~/.pixi/envs/default, so its presence and
             importability are directly checkable.
-        require:
-            - '@github.com/opencharly/layer-cuda:v2026.323.0252'
+        # NO `require: layer-cuda`: the CUDA substrate belongs to the BOX, not to this
+        # candy (opencharly/layer-cuda#34 item 6, the precedent opencharly/pod-comfyui#24
+        # set). A `require:` is target-blind — it asserted the GPU stack for EVERY
+        # consumer, so a CPU box composing this candy dragged a toolkit it cannot use, and
+        # a CDI pod re-composed a substrate its base had already applied. The GPU boxes
+        # that need it base on `podcdi.pod-cdi`, which composes `layer-cdi` → `layer-cuda`.
         candy:
             - '@github.com/opencharly/layer-llama-cpp:v2026.272.0321'
         env:
