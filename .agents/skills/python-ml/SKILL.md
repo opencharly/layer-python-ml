@@ -48,11 +48,13 @@ charly shell python-ml
 ## Key Candies
 
 - `/charly-languages:python-ml` — ML Python packages via pixi (Tier 2 meta-layer)
+- `/charly-jupyter:llama-cpp` — llama.cpp binaries (sub-candy)
 - `/charly-distros:cuda` — GPU support (via nvidia base)
 
 ## Related Boxes
 
 - `/charly-distros:nvidia` — parent (GPU without ML packages)
+- `/charly-jupyter:jupyter` — legacy Jupyter with ML stack (monolithic)
 
 ## Verification
 
