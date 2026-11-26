@@ -60,6 +60,5 @@ transformers, and vLLM all import and print a version.
 - Owning skill: `/charly-languages:python-ml`
 - GPU base: `/charly-distros:cuda`, `/charly-distros:nvidia`
 - Sub-candy: `/charly-jupyter:llama-cpp`
-- Sibling boxes: `/charly-jupyter:jupyter-ml`, `/charly-jupyter:unsloth-studio`
 - [`opencharly/charly`](https://github.com/opencharly/charly) — the charly CLI and image builder
 - [`opencharly/opencharly`](https://github.com/opencharly/opencharly) — the umbrella
