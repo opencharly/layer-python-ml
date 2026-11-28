@@ -54,7 +54,6 @@ charly shell python-ml
 ## Related Boxes
 
 - `/charly-distros:nvidia` — parent (GPU without ML packages)
-- `/charly-jupyter:jupyter` — legacy Jupyter with ML stack (monolithic)
 
 ## Verification
 
